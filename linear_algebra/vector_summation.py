@@ -13,7 +13,7 @@ def vector_sum(v1,v2):
     return v1 + v2
 
 vector_one = [1,2,4,5,6]
-vector_two = [3,4,5]
+vector_two = [3,4,5,6,2]
 
 result = vector_sum(vector_one,vector_two)
 
