@@ -40,3 +40,7 @@ def dot_product(vector1,vector2):
 product = dot_product(vector_one,vector_one)
 
 print("The dot product is:",product)
+
+
+shape_vector_one = np.array(vector_one)
+print(shape_vector_one.shape)
