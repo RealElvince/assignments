@@ -18,3 +18,25 @@ vector_two = [3,4,5,6,2]
 result = vector_sum(vector_one,vector_two)
 
 print("The sum of two vectors:",result)
+
+
+# dot product of two vectors
+
+def dot_product(vector1,vector2):
+
+    first_vector = np.array(vector1)
+    second_vector = np.array(vector2)
+
+
+    if first_vector.shape != second_vector.shape:
+        raise ValueError("Vectors must be of the same length")
+    
+
+    return np.dot(first_vector,second_vector)
+
+
+
+
+product = dot_product(vector_one,vector_one)
+
+print("The dot product is:",product)
