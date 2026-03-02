@@ -30,3 +30,22 @@ start, end = 'A', 'E'
 distance, path = dijkstra(graph, start, end)
 print(f"Shortest Path: {' -> '.join(path)}")
 print(f"Total Distance: {distance}")
+
+
+
+
+# Modified Graph
+modified_graph = {
+    'A': [('B', 4), ('C', 2)],
+    'B': [('C', 5), ('D', 10), ('F', 6)],
+    'C': [('D', 3), ('E', 1)],
+    'D': [('E', 7), ('G', 2)],
+    'E': [('F', 1)],
+    'F': [('G', 1)],
+    'G': []
+}
+
+start, end = 'A', 'G'
+distance, path = dijkstra(modified_graph, start, end)
+print(f"Shortest Path: {' -> '.join(path)}")
+print(f"Total Distance: {distance}")
